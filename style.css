@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* navbar start */
+.header-container {
+    background-color: #03203C;
+}
+
+.navbar {
+    display: flex;
+    padding: 25px 50px;
+    justify-content: space-between;
+}
+
+.nav-menu>ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-menu>ul>li {
+    margin-right: 50px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+
+/* ---header */
+
+.event-container {
+    display: flex;
+    margin-top: -70px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-text-area {
+    color: #FFFFFF;
+}
+
+.header-title {
+    font-size: 54px;
+}
+
+button {
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: tomato;
+    Padding: 10px 24px 10px 24px;
+
+}
+
+.fa-user {
+    margin-right: 8px;
+}
+
+.header-img img {
+    padding: 78px 40px;
+    width: 556px;
+    height: 438px;
+
+}
+
+.header-img img:hover {
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+
+}
+
+/* ---players container start--- */
+.players-container {
+    width: 1050px;
+
+    margin: 3% 7%;
+    /* margin: 3% 10% 3% 10%; */
+
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+    width: 300px;
+    height: 474px;
+    padding: 15px;
+    margin: 30px;
+    box-shadow: 1px 1px 40px 1px rgba(128, 128, 128, 0.322);
+}
+
+.player p {
+    font-size: 14px;
+    color: gray;
+}
+
+.player-img img {
+    width: 300px;
+    height: 256px;
+
+}
+
+/* headline section start */
+.title {
+    margin-left: 100px;
+    margin-top: 80px;
+    width: 220px;
+    padding: 5px 25px;
+
+
+    color: #FFFFFF;
+    background-color: #120E43;
+}
+
+hr {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    background-color: gray;
+    border: 2px solid gray;
+}
+
+.headline-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px;
+    background-color: #383CC1;
+    color: #FFFFFF;
+}
+
+.headline-img img {
+    width: 500px;
+    height: 280px;
+
+}
+
+.headlines {
+    padding: 15px;
+
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    border-bottom: 2px solid gray;
+}
+
+.headline-img img:hover {
+    height: 279px;
+    background-color: #120E43;
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+.headline-info {
+    margin-top: 35px;
+}
+
+/* winings moment starts */
+.video-container {
+
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+
+
+/* footer start */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.footer-img img {
+
+    width: 483px;
+    height: 110px;
+}
+
+.footer-icon {
+    color: #313534;
+    font-size: 40px;
+}
+
+.copy-right {
+    color: #313534;
+    font-size: 25px;
+}
+
+
+/* media queris */
+@media only screen and (max-width: 688px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+
+        /* overflow: hidden; */
+    }
+
+    /* ---header start--- */
+    .navbar {
+        display: none;
+    }
+
+    .event-container {
+        display: flex;
+        flex-direction: column;
+        padding-right: 80px;
+
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    .header-img img {
+        width: 250px;
+        height: 300px;
+
+    }
+
+    /* player section start */
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        width: 250px;
+        height: 474px;
+        box-shadow: 1px 1px 40px 1px rgba(128, 128, 128, 0.322);
+
+    }
+
+    .player-img img {
+        width: 250px;
+        height: 256px;
+
+    }
+
+    /* headline section*/
+    .title {
+        margin: 10px 15px 10px 5px;
+    }
+
+    hr {
+        margin-top: 20px;
+    }
+
+    .headline-container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 9px;
+
+    }
+
+    .headlines {
+        width: 320px;
+        border-bottom: 2px solid gray;
+    }
+
+
+
+    .headline-img img {
+        width: 450px;
+
+
+    }
+
+
+
+    /* wining moments section */
+    .video-container {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .video {
+        margin-top: 25px;
+    }
+
+    iframe {
+        width: 320px;
+    }
+
+    /* footer start */
+    footer {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    .footer-img img {
+        width: 250px;
+    }
+
+    .footer-icon {
+        font-size: 20px;
+    }
+
+    .copy-right p {
+        font-size: 15px;
+    }
+}
